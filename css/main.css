@@ -1,0 +1,485 @@
+:root{
+    /* ------ COLORS ------ */
+
+    /* Neutral colors */
+    --white: #fff;
+    --dark-gray: #464055;
+    --light-gray: #58565F;
+    --max-light-gray: #FBFBFB;
+    --disabled: rgba(255, 255, 255, 0);
+
+    /* Brand colors */
+
+    --purple: #8F7CBA;
+    --purple-dark: #5D4299;
+
+    --red: #F77366;
+    --red-dark: #CF4336;
+
+    --green: #7FCCB4;
+    --yellow: #FEBA54;
+
+
+    /* MAIN COMPONENTS */
+
+    /* Background website */
+    --bg-website-main: var(--white);
+    --bg-website-secondary: var(--max-light-gray);
+
+    /* Footer */
+
+    --bg-footer: var(--dark-gray);
+
+
+    /* ------ TYPOGRAPHY ------ */
+
+    /* --- Color --- */
+    --color-title-text: var(--dark-gray);
+    --color-text: var(--light-gray);
+    --color-text-light: var(--white);
+
+
+    /* --- Font family --- */
+    --ff-h1: "Lobster";
+    --ff-h2: "Lobster";
+    --ff-title: "Open Sans";
+    --ff-text: "Open Sans";
+
+
+    /* --- Font weight --- */
+
+    /* Open Sans */
+    --light: 300;
+    --regular: 400;
+    --semibold: 600;
+
+    /* Font size */
+    
+    --fz-h1: 44px;
+    --fz-h2: 30px;
+    --fz-title: 20px;
+    --fz-text: 16px;
+
+    --fz-button: 20px;
+
+
+    /* ------ BORDER ------ */
+
+    /* Border radius */
+    --rounded: 7px;
+    --circle: 50%;
+
+    /* ------ BUTTON ------ */
+
+    /* --- Background color --- */
+
+    /* Primary button */
+    --bg__primary-button: var(--red);
+    --color__primary-button: var(--color-text-light);
+    --bg-hover__primary-button: var(--red-dark);
+
+    /* Secondary button */
+    --bg__secondary-button: var(--purple);
+    --color__secondary-button: var(--color-text-light);
+    --bg-hover__secondary-button: var(--purple-dark);
+
+
+    /* ------ MARGIN ------ */
+
+
+    /* Margins */
+
+    --sm-margin: 16px;
+    --m-margin: 24px;
+    --l-margin: 36px;
+    --xl-margin: 48px;
+    --xxl-margin: 72px;
+    --section-margin: 150px;
+
+    /* H1 margin-bottom */
+    --m-h1: var(--m-margin);
+
+    /* Section title margin-bottom */
+    --m-section-title: var(--xl-margin);
+
+    /* Title margin-bottom */
+    --m-title: var(--sm-margin);
+
+    /* Subtitle margin-top */
+    --m-subtitle: var(--sm-margin);
+}
+
+/* ------ TYPOGRAPHY ------- */
+
+h1, h2{
+    font-family: var(--ff-h1);
+}
+
+h1{
+    font-size: var(--fz-h1);
+}
+
+h2{
+    font-size: var(--fz-h2);
+}
+
+p {
+    font-family: var(--ff-text);
+    font-size: var(--fz-text);
+    margin-bottom: 0;
+}
+
+.title{
+    font-family: var(--ff-title);
+    font-size: var(--fz-title);
+    font-weight: var(--semibold);
+}
+
+/* ------ BUTTONS ------ */
+
+/* Primary button */
+
+.primary-button{
+    font-size: var(--fz-button);
+    font-weight: var(--semibold);
+
+    background-color: var(--bg__primary-button);
+    color: var(--color__primary-button);
+    border: none;
+}
+
+.primary-button:hover{
+    background-color: var(--bg-hover__primary-button);
+}
+
+/* Secondary button */
+
+.secondary-button{
+    font-size: var(--fz-button);
+    font-weight: var(--semibold);
+
+    background-color: var(--bg__secondary-button);
+    color: var(--color__secondary-button);
+}
+
+.secondary-button:hover{
+    background-color: var(--bg-hover__secondary-button);
+}
+
+
+/* ------ MAIN COMPONENTS ------ */
+
+body{
+    font-family: "Open Sans";
+    font-weight: var(--regular);
+    font-size: var(--fz-text);
+
+    background-color: var(--bg-website-main);
+}
+
+section{
+    margin-top: var(--section-margin);
+}
+
+
+/* --- Header section --- */
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 0;
+}
+
+.menu{
+    max-width: 50%;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list>a{
+    font-weight: var(--semibold);
+
+    color: var(--color-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo{
+    width: 99px;
+    height: 81px;
+
+    background-image: url(../img/icons/logo-dark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* --- Offer section --- */
+
+.offer-section{
+    padding: 187px 0 219px 0;
+    margin-top: -127px;
+    margin-bottom: -219px;
+    overflow-x: hidden;
+}
+
+.row.justify-content-between.align-items-center.offer-wrapper{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.offer__wrapper{
+    gap: var(--l-margin);
+}
+
+.offer__text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: var(--m-margin);
+}
+
+/* Offer image */
+
+.offer-image__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.offer-image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 360px;
+
+    border-radius: var(--rounded);
+}
+
+.offer__yellow-polygon{
+    width: 675px;
+    height: 766px;
+    position: absolute;
+    top: -187px;
+    right: -123px;
+    z-index: -1;
+}
+
+.offer__red-polygon{
+    position: absolute;
+    top: -65px;
+    left: 100px;
+    z-index: -2;
+}
+
+
+/* --- Slider section --- */
+
+.section-title{
+    margin-bottom: var(--xl-margin);
+}
+
+.carousel-inner {
+    border-radius: var(--rounded);
+}
+
+.carousel-indicators{
+    bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: var(--light-gray);
+    opacity: 0.5;
+
+    height: 8px;
+    width: 8px;
+    border-radius: var(--circle);
+}
+
+.carousel-indicators .active{
+    background-color: var(--red);
+    opacity: 1;
+}
+
+.slider__green-polygon{
+    top: -175px;
+    right: 400px;
+    z-index: -1;
+}
+
+.slider-section__text-button-container{
+    gap: var(--l-margin);
+}
+
+.slider-section__text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm-margin);
+}
+
+.button-icon{
+    margin-right: var(--m-margin);
+}
+
+/* Gallery section */
+
+.gallery-section{
+    background: linear-gradient(to bottom, var(--disabled) 50%, var(--bg-website-secondary) 50%)
+}
+
+.gallery-section__grid{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+    gap: 1.5rem;
+}
+
+.grid__item{
+    object-fit: cover;
+    height: 100%;
+    width: 100%; 
+    border-radius: var(--rounded);
+}
+
+.grid__text{
+    display: flex;
+    align-items: center;
+}
+
+.grid__item-1{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+.grid__item-2{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.grid__item-3{
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.grid__item-4{
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+}
+
+.grid__item-5{
+    grid-column: 4;
+    grid-row: 2 / span 2;
+}
+
+.grid__item-6{
+    grid-column: 5 / span 2;
+    grid-row: 3;
+}
+
+
+/* Feature section */
+
+.feature-section{
+    margin-top: 0;
+    padding-top: var(--section-margin);
+
+    background-color: var(--bg-website-secondary);
+}
+
+.feature-container{
+    margin-bottom: var(--xxl-margin);
+}
+
+.feature-icon-1{
+    height: 90px;
+    width: 90px;
+
+    border-radius: var(--circle);
+    background-color: var(--red);
+    background-image: url(../img/icons/icon-puzzle.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.feature-icon-2{
+    height: 90px;
+    width: 90px;
+
+    border-radius: var(--circle);
+    background-color: var(--green);
+    background-image: url(../img/icons/icon-heart.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.feature-icon-3{
+    height: 90px;
+    width: 90px;
+
+    border-radius: var(--circle);
+    background-color: var(--yellow);
+    background-image: url(../img/icons/icon-clock.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* Form section */
+
+.form-section{
+    margin-top: 0;
+    padding-top: var(--section-margin);
+
+    background-color: var(--bg-website-secondary);
+}
+
+.form-section__title{
+    gap: var(--sm-margin);
+    margin-bottom: var(--xxl-margin);
+}
+
+.form-section__image-wrapper{
+    min-height: 400px;
+}
+
+.form-section__image{
+    z-index: 1;
+}
+
+.form-section__polygon{
+    top: 0;
+    left: 0;
+}
+
+
+/* Footer */
+
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+
+    background-color: var(--bg-footer);
+}
+
+.menu-list__wrapper{
+    gap: 70px;
+}
+
+.menu-list>div>a{
+    font-weight: var(--semibold);
+
+    color: var(--color-text-light);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-logo{
+    background-image: url(../img/icons/logo-white.png)
+}
+
