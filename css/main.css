@@ -113,6 +113,8 @@
 
 h1, h2{
     font-family: var(--ff-h1);
+
+    color: var(--color-title-text);
 }
 
 h1{
@@ -133,6 +135,8 @@ p {
     font-family: var(--ff-title);
     font-size: var(--fz-title);
     font-weight: var(--semibold);
+
+    color: var(--color-title-text);
 }
 
 /* ------ BUTTONS ------ */
@@ -173,6 +177,7 @@ body{
     font-family: "Open Sans";
     font-weight: var(--regular);
     font-size: var(--fz-text);
+    color: var(--color-text);
 
     background-color: var(--bg-website-main);
 }
