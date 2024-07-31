@@ -62,14 +62,14 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <!-- Offer text -->
-                <div class="col-xl-4 d-flex flex-column offer__wrapper">
+                <div class="col-xl-5 d-flex flex-column offer__wrapper">
                     <!-- Text -->
                     <div class="offer__text-wrapper">
                         <h1 class="offer-title">Добро пожаловать <br> в наш детский клуб!</h1>
                         <p>Мы предлагаем уникальные развивающие игры для детей возрастом от 2 до 6 лет. Познавательное обучение через веселые игры - наша страсть!</p>
                     </div>
                     <!-- Ofer button -->
-                    <a class="btn btn-secondary secondary-button" href="#form-section" role="button">Присоединиться к нам</a>
+                    <a class="btn btn-secondary secondary-button offer-button" href="#form-section" role="button">Присоединиться к нам</a>
                 </div>
                 <!-- Offer image -->
                 <div class="col-xl-7 offer-image__wrapper">
@@ -100,7 +100,7 @@
                 <div class="col-xl-6 slider-section__carousel position-relative">
 
                     <!-- Carousel component -->
-                    <div id="carouselSlider" class="carousel slide">
+                    <div id="carouselSlider" class="carousel slide" data-bs-ride="carousel">
 
                         <!-- Carousel indicators -->
                         <div class="carousel-indicators">
@@ -122,15 +122,18 @@
                           </div>
                         </div>
 
-                        <!-- Button prev-next -->
+                        <!-- Carousel control buttons -->
+                        <!-- Prev -->
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
+                        <!-- Next -->
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
+                        
                     </div>
 
                     <img src="img/polygon/green-polygon.png" alt="green polygon" class="slider__green-polygon position-absolute">
@@ -242,7 +245,7 @@
             <div class="row justify-content-around">
 
                 <!-- Form -->
-                <div class="col-xl-4 d-flex justify-content-center">
+                <div class="col-xl-6 d-flex justify-content-center">
                     <form class="form w-75 form-wrapper" action="" method="get">
                         <!-- Input 1 -->
                         <div class="form-floating mb-3">
@@ -265,7 +268,7 @@
                 </div>
 
                 <!-- Picture -->
-                <div class="col-xl-5 d-flex justify-content-center position-relative overflow-hidden form-section__image-wrapper">
+                <div class="col-xl-6 d-flex justify-content-center position-relative overflow-hidden form-section__image-wrapper">
                     <img src="img/form-section/child.png" alt="little girl" class="form-section__image position-absolute h-100">
                     <img src="img/polygon/vertical-yellow-polygon.png" alt="vertical yellow polygon" class="form-section__polygon position-absolute">
                 </div>

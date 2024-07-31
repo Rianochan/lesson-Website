@@ -186,6 +186,10 @@ section{
     margin-top: var(--section-margin);
 }
 
+.container{
+    max-width: 1110px;
+}
+
 
 /* --- Header section --- */
 
@@ -250,6 +254,10 @@ section{
     gap: var(--m-margin);
 }
 
+.offer-button{
+    width: fit-content;
+}
+
 /* Offer image */
 
 .offer-image__wrapper{
@@ -299,17 +307,35 @@ section{
 }
 
 .carousel-indicators [data-bs-target]{
-    background-color: var(--light-gray);
-    opacity: 0.5;
-
     height: 8px;
     width: 8px;
     border-radius: var(--circle);
+
+    background-color: var(--light-gray);
+    opacity: 0.5;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .carousel-indicators .active{
     background-color: var(--red);
     opacity: 1;
+}
+
+/* Carousel button controls */
+
+.carousel-control-next-icon{
+    background-image: url(../img/slider/arrow-right.svg);
+}
+
+
+.carousel-control-prev-icon{
+    background-image: url(../img/slider/arrow-left.svg);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    height: 50px;
+    width: 50px;
 }
 
 .slider__green-polygon{
