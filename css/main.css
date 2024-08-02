@@ -37,6 +37,8 @@
     --color-title-text: var(--dark-gray);
     --color-text: var(--light-gray);
     --color-text-light: var(--white);
+    --color-link-hover-header: var(--purple-dark);
+    --color-link-hover-footer: var(--max-light-gray);
 
 
     /* --- Font family --- */
@@ -198,7 +200,7 @@ section{
     justify-content: center;
     align-items: center;
 
-    padding: 40px 0;
+    padding: 10px 0;
 }
 
 .menu{
@@ -219,6 +221,10 @@ section{
     cursor: pointer;
 }
 
+.menu-list>a:hover{
+    color: var(--color-link-hover-header);
+}
+
 .logo{
     width: 99px;
     height: 81px;
@@ -233,10 +239,7 @@ section{
 /* --- Offer section --- */
 
 .offer-section{
-    padding: 187px 0 219px 0;
-    margin-top: -127px;
-    margin-bottom: -219px;
-    overflow-x: hidden;
+    margin-top: 90px;
 }
 
 .row.justify-content-between.align-items-center.offer-wrapper{
@@ -267,6 +270,8 @@ section{
 }
 
 .offer-image{
+    position: relative;
+    z-index: 2;
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -281,14 +286,14 @@ section{
     position: absolute;
     top: -187px;
     right: -123px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .offer__red-polygon{
     position: absolute;
     top: -65px;
     left: 100px;
-    z-index: -2;
+    z-index: 0;
 }
 
 
@@ -508,6 +513,10 @@ section{
     color: var(--color-text-light);
     text-decoration: none;
     cursor: pointer;
+}
+
+.menu-list>div>a:hover{
+    opacity: 0.5;
 }
 
 .footer-logo{
